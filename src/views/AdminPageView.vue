@@ -1131,6 +1131,8 @@
 					);
 					localStorage.setItem("historyRoute", this.$route.fullPath);
 				}
+			} else {
+				this.$router.push("/accessdenied");
 			}
 		},
 	};

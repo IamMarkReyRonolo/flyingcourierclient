@@ -11,6 +11,9 @@ import UserPageView from "../views/UserPageView.vue";
 
 import AdminPageView from "../views/AdminPageView.vue";
 
+import AccessDenied from "../components/ErrorComponents/AccessDenied.vue";
+import NotFound from "../components/ErrorComponents/404.vue";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -23,6 +26,8 @@ const routes = [
 	{ path: "/admin", component: AdminSignIn },
 	{ path: "/account", component: UserPageView },
 	{ path: "/administrator", component: AdminPageView },
+	{ path: "/accessdenied", component: AccessDenied },
+	{ path: "*", component: NotFound },
 ];
 
 const router = new VueRouter({
