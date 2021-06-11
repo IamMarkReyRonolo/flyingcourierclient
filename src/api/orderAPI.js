@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "http://localhost:3000/api/order";
+const url = "https://flyingcourierserver.herokuapp.com/api/order";
 axios.defaults.headers.common["auth-token"] =
 	"Bearer " + localStorage.getItem("token");
 
